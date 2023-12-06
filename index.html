@@ -58,7 +58,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("YOUR API GATEWAY ENDPOINT", requestOptions)
+            fetch("https://vbg7hy2s4k.execute-api.ap-southeast-2.amazonaws.com/dev/PowerOfMath", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
